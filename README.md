@@ -50,7 +50,7 @@ URL : /getUser<br/>
 Request :<br/>
 
 `{
-  "username": "lakers01"<br/>
+  "username": "lakers01"
 }`
 
 curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01"}' 'http://localhost:8086/getUser'<br/>
@@ -58,7 +58,7 @@ curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01"}' 'h
 OR<br/>
 
 `{
-  "email": "shaq@lakers.com"<br/>
+  "email": "shaq@lakers.com"
 }`
 
 curl -XPOST -H "Content-type: application/json" -d '{"email": "shaq@lakers.com"}' 'http://localhost:8086/getUser'<br/>
@@ -67,8 +67,8 @@ OR<br/>
 
 Preference will be given to username<br/>
 `{
-  "username": "lakers01",<br/>
-  "email": "shaq@lakers.com"<br/>
+  "username": "lakers01",
+  "email": "shaq@lakers.com"
 }`
 
 curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01","email": "shaq@lakers.com"}' 'http://localhost:8086/getUser'<br/>
@@ -78,7 +78,7 @@ Method : POST<br/>
 URL : /getUserByStreet<br/>
 Request :<br/>
 `{
-   "street": "123 San Diego Lane"<br/>
+   "street": "123 San Diego Lane"
 }`
 
 curl -XPOST -H "Content-type: application/json" -d '{"street": "123 San Diego Lane"}' 'http://localhost:8086/getUserByStreet'<br/>
