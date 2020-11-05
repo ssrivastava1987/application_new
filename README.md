@@ -1,56 +1,56 @@
 # API Description
 
-The Application contains multiple endpoints related to users and their personal details.
-I have used the in-memory h2 db to add create tables and inserted data to it.
-File used : data.sql
+The Application contains multiple endpoints related to users and their personal details.<br/>
+I have used the in-memory h2 db to add create tables and inserted data to it.<br/>
+File used : data.sql<br/>
 
-Commands which can be used to build it locally.
-cd <local directory where the code is kept>
-mvn clean install
-mvn spring-boot:run
+Commands which can be used to build it locally.<br/>
+cd <local directory where the code is kept><br/>
+mvn clean install<br/>
+mvn spring-boot:run<br/>
 
-Added curl for all endpoints:
-curl.sh
+Added curl for all endpoints:<br/>
+curl.sh<br/>
 
-Endpoint details:
+Endpoint details:<br/>
 
-Get All Users:
-Method : GET
-URL : /getAllUsers
+Get All Users:<br/>
+Method : GET<br/>
+URL : /getAllUsers<br/>
 
-curl -XGET 'http://localhost:8086/getAllUsers'
+curl -XGET 'http://localhost:8086/getAllUsers'<br/>
 
-Get User by id:
-Method : GET
-URL : /getById/{id}
+Get User by id:<br/>
+Method : GET<br/>
+URL : /getById/{id}<br/>
 
-curl -XGET 'http://localhost:8086/getById/2'
+curl -XGET 'http://localhost:8086/getById/2'<br/>
 
-Get User by email:
-Method : GET
-URL : /getByEmail/{email}
+Get User by email:<br/>
+Method : GET<br/>
+URL : /getByEmail/{email}<br/>
 
-curl -XGET 'http://localhost:8086/getByEmail/shaq@lakers.com'
+curl -XGET 'http://localhost:8086/getByEmail/shaq@lakers.com'<br/>
 
-Get Users by name:
-Method : GET
-URL : /getByName?name=<name>
+Get Users by name:<br/>
+Method : GET<br/>
+URL : /getByName?name=<name><br/>
 
-curl -X GET "http://localhost:8086/getByName?firstname=Shaq&lastname=Oneil"
+curl -X GET "http://localhost:8086/getByName?firstname=Shaq&lastname=Oneil"<br/>
 
-Get Users by username:
-Method : GET
-URL : /getByUserName/{username}
+Get Users by username:<br/>
+Method : GET<br/>
+URL : /getByUserName/{username}<br/>
 
-curl -XGET 'http://localhost:8086/getByUserName/lakers01'
+curl -XGET 'http://localhost:8086/getByUserName/lakers01'<br/>
 
-Get Specific User by username/email:
-Method : POST
-URL : /getUser
-Request :
-{
-  "username": "lakers01"
-}
+Get Specific User by username/email:<br/>
+Method : POST<br/>
+URL : /getUser<br/>
+Request :<br/>
+{<br/>
+  "username": "lakers01"<br/>
+}<br/>
 
 curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01"}' 'http://localhost:8086/getUser'
 
