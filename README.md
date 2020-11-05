@@ -52,32 +52,32 @@ Request :<br/>
   "username": "lakers01"<br/>
 }<br/>
 
-curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01"}' 'http://localhost:8086/getUser'
+curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01"}' 'http://localhost:8086/getUser'<br/>
 
-OR
-{
-  "email": "shaq@lakers.com"
-}
+OR<br/>
+{<br/>
+  "email": "shaq@lakers.com"<br/>
+}<br/>
 
-curl -XPOST -H "Content-type: application/json" -d '{"email": "shaq@lakers.com"}' 'http://localhost:8086/getUser'
+curl -XPOST -H "Content-type: application/json" -d '{"email": "shaq@lakers.com"}' 'http://localhost:8086/getUser'<br/>
 
-OR
+OR<br/>
 
-Preference will be given to username
-{
-  "username": "lakers01",
-  "email": "shaq@lakers.com"
-}
+Preference will be given to username<br/>
+{<br/>
+  "username": "lakers01",<br/>
+  "email": "shaq@lakers.com"<br/>
+}<br/>
 
-curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01","email": "shaq@lakers.com"}' 'http://localhost:8086/getUser'
+curl -XPOST -H "Content-type: application/json" -d '{"username": "lakers01","email": "shaq@lakers.com"}' 'http://localhost:8086/getUser'<br/>
 
-Get Users living on specific street : commented the like query as specific word was given.
-Method : POST
-URL : /getUserByStreet
-Request :
-{
-   "street": "123 San Diego Lane"
-}
+Get Users living on specific street : commented the like query as specific word was given.<br/>
+Method : POST<br/>
+URL : /getUserByStreet<br/>
+Request :<br/>
+{<br/>
+   "street": "123 San Diego Lane"<br/>
+}<br/>
 
-curl -XPOST -H "Content-type: application/json" -d '{"street": "123 San Diego Lane"}' 'http://localhost:8086/getUserByStreet'
+curl -XPOST -H "Content-type: application/json" -d '{"street": "123 San Diego Lane"}' 'http://localhost:8086/getUserByStreet'<br/>
 
