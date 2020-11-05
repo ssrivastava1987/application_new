@@ -5,7 +5,7 @@ I have used the in-memory h2 db to add create tables and inserted data to it.<br
 File used : data.sql<br/>
 
 Commands which can be used to build it locally.<br/>
-cd <local directory where the code is kept><br/>
+cd [local directory where the code is kept]<br/>
 mvn clean install<br/>
 mvn spring-boot:run<br/>
 
