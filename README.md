@@ -9,7 +9,7 @@ cd <local directory where the code is kept>
 mvn clean install
 mvn spring-boot:run
 
-Added curl for all endpoint in file:
+Added curl for all endpoints:
 curl.sh
 
 Endpoint details:
