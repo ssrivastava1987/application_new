@@ -1,6 +1,6 @@
 # application_new
 
-The Application contains multiple endpoints related to users and their personal details.
+##The Application contains multiple endpoints related to users and their personal details.
 I have used the in-memory h2 db to add create tables and inserted data to it.
 File used : data.sql
 
