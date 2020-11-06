@@ -119,7 +119,8 @@ public class DoYourThingController {
     /**
      * Method to get users by name
      * Kept this method as there might be multiple people with same name.
-     * @param name
+     * @param firstName
+     * @param lastname
      * @return JSON String
      */
     @GetMapping(path = "/getByName")
@@ -170,7 +171,7 @@ public class DoYourThingController {
             user.setName(u.getName());
             user.setUserName(u.getUserName());
             user.setEmail(u.getEmail());
-            if(Objects.nonNull(user.getAddress())) {
+            if(Objects.nonNull(u.getAddress())) {
                 address.setStreet(u.getAddress().getStreet());
                 address.setCity(u.getAddress().getCity());
                 address.setZipCode(u.getAddress().getZipCode());
