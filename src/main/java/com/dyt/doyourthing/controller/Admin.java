@@ -28,6 +28,7 @@ public class Admin {
         e4.setEmpName("Supreet Bathal");
         e4.setEmpSalary(75000.00);
 
+
         System.out.println("********************************");
         System.out.println("By getter");
         System.out.println("********************************");
