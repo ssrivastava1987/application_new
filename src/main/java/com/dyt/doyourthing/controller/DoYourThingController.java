@@ -25,7 +25,7 @@ public class DoYourThingController {
      * Method to get all users
      * @return JSON String
      */
-    @GetMapping(path = "/getAllUsers")
+    @GetMapping(path = "/getAllUsers", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getAllUsers() {
         String userString = null;
         List<User> userList = doYourThingService.getAllUsers();
@@ -73,7 +73,7 @@ public class DoYourThingController {
      * @param id
      * @return JSON String
      */
-    @GetMapping(path = "/getById/{id}")
+    @GetMapping(path = "/getById/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getById(@PathVariable(value = "id") Long id) {
         String userString = null;
         User user = doYourThingService.getById(id);
@@ -89,7 +89,7 @@ public class DoYourThingController {
      * @param userName
      * @return JSON String
      */
-    @GetMapping(path = "/getByUserName/{username}")
+    @GetMapping(path = "/getByUserName/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getByUserName(@PathVariable(value ="username") String userName) {
         String userString = null;
         User user = doYourThingService.getByUserName(userName);
@@ -105,7 +105,7 @@ public class DoYourThingController {
      * @param email
      * @return JSON String
      */
-    @GetMapping(path = "/getByEmail/{email}")
+    @GetMapping(path = "/getByEmail/{email}", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getByEmail(@PathVariable(value ="email") String email) {
         String userString = null;
         User user = doYourThingService.getByEmail(email);
@@ -123,7 +123,7 @@ public class DoYourThingController {
      * @param lastname
      * @return JSON String
      */
-    @GetMapping(path = "/getByName")
+    @GetMapping(path = "/getByName", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getByName(@RequestParam(value ="firstname") String firstName,@RequestParam(value ="lastname") String lastname) {
         String userString = null;
         String name = firstName.trim()+" "+lastname.trim();
